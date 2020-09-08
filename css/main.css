@@ -1,0 +1,130 @@
+/* appliquer les propriétés css à toute la page */
+/* on change le mode de calcul à l'aide de box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+/**** Concersion px / rem ****/
+html {
+    font-size: 62.5%;
+}
+/*****************************/
+
+body {
+    /* rétablir la taille par défaut suite au changement de la taille dans le html */
+    font-size: 1.6rem;
+    /* max-width: 100rem;
+    margin: 0 auto; */
+}
+
+.navbar-brand img {
+    width: 50%;
+}
+
+/* nouveau client */
+
+#nouveau-client {
+    padding: 20rem 0;
+    background-image: url(./../img/Lille-Seminaires.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+
+}
+
+#depart-client {
+    padding: 20rem 0;
+    background-image: url(./../img/Lille-Hall.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+
+}
+
+.encadrement {
+    text-align: center;
+    color: rgb(36, 31, 31);
+    background-color: rgba(245, 245, 245, 0.658);
+    width: 35%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.encadrement h2 {
+    font-size: 3rem;
+}
+
+.underline {
+    height: 0.3rem;
+    width: 8rem;
+    background-color: rgb(179, 143, 108);
+    margin: 0 auto;
+}
+
+/* formulaire 1 */
+.formulaire {
+    background-color: rgb(37, 35, 35);
+    color: white;
+    padding: 3rem 2rem;
+    margin: 4rem auto;
+}
+
+div.col.radio {
+    padding-right: 0;
+    padding-left: 0;
+
+}
+
+#idChambre {
+    background-color: white;
+    padding: 1.3rem;
+}
+
+.formulaire input[type='submit'] {
+    background-color: rgb(179, 143, 108);
+    color: white;
+    border: none;
+    padding: 1.3rem;
+}
+
+.formulaire input, select {
+    padding: 1rem 0.3rem;
+    width: 100%;
+}
+
+.formulaire label {
+    margin-top: 1rem;
+}
+
+.paiement {
+    background-color: rgb(179, 143, 108);
+    color: white;
+    text-align: center;
+    padding: 20rem 0;
+    transition: 1s;
+}
+
+@media screen and (max-width: 768px) {
+    .formulaire input, select {
+        margin-bottom: 2rem;
+    }
+
+    .formulaire input[type='submit'] {
+        margin-top: 2rem;
+    }
+
+    .encadrement {
+        width: 60%;
+    }
+
+    .encadrement h2 {
+        font-size: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .navbar-brand img {
+        width: 70%;
+    }
+}

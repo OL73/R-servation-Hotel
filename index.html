@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Réservation hotel Olivarius</title>
+</head>
+
+<body>
+    <header class="bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark container p-3">
+            <a class="navbar-brand w-75" href="#"><img src="./img/Logoblanc.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Nouveau client <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Départ client</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil">
+            <div id="nouveau-client">
+                <div class="encadrement">
+                    <h2>Accueil nouveau client</h2>
+                    <div class="underline"></div>
+                </div>
+            </div>
+            <div class="container formulaire">
+                <form method="" action="" autocomplete="off">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 col-lg">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="idPrenom">Prénom</label>
+                                </div>
+                                <div class="col-12">
+                                    <input placeholder="Prénom..." type="text" name="prenom" id="idPrenom">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="idNom">Nom</label>
+                                </div>
+                                <div class="col-12">
+                                    <input placeholder="Nom..." type="text" name="nom" id="idNom">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="idNbNuits">Nombre de nuits</label>
+                                </div>
+                                <div class="col-12">
+                                    <input placeholder="Nombre de nuits..." type="number" name="duree" id="idNbNuits">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-12">
+                                    <label for="idChambre">Chambre</label>
+                                </div>
+                                <div class="col-sm-6 col-lg-12">
+                                    <select name="chmabre" id="idChambre">
+                                        <option value="1">Chambre 1 personne</option>
+                                        <option value="2">Chambre 2 personnes</option>
+                                        <option value="3">Chambre 3 personnes</option>
+                                        <option value="4">Loft</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6 col-12 col-lg-12">
+                                    <p>Petit Déjeuner</p>
+                                </div>
+                                <div class="col-sm-6 col-10 col-lg-12">
+                                    <div class="row">
+                                        <div class="col radio boutonRadio">
+                                            <input type="radio" name="petitDej" value="oui" id="idChoix1">
+                                        </div>
+                                        <div class="col radio">
+                                            <label for="idChoix1">oui</label>
+                                        </div>
+                                        <div class="col radio boutonRadio">
+                                            <input type="radio" name="petitDej" value="non" id="idChoix2" checked>
+                                        </div>
+                                        <div class="col radio ">
+                                            <label for="idChoix2">non</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg text-center align-self-center">
+                            <input type="submit" value="Enregistrer le client" id="submitAccueil">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+        <section id="depart">
+            <div id="depart-client">
+                <div class="encadrement">
+                    <h2>Départ client</h2>
+                    <div class="underline"></div>
+                </div>
+            </div>
+            <div class="container formulaire">
+                <form method="POST" action="">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4 align-self-center">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="idPrenomRecherche">Prénom</label>
+                                </div>
+                                <div class="col-12">
+                                    <input placeholder="Prénom..." type="text" name="prenom" id="idPrenomRecherche">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 align-self-center">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="idNomRecherche">Nom</label>
+                                </div>
+                                <div class="col-12">
+                                    <input placeholder="Nom..." type="text" name="nom" id="idNomRecherche">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-2 text-center align-self-center">
+                            <input type="submit" value="Rechercher" id="submitDepart">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div id="idPaiement">
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-dark">
+        <div class="container text-center text-white">
+            <p class="p-5 m-0">2020 © Olivarius</p>
+        </div>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
